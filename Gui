@@ -1,0 +1,38 @@
+local gui = loadstring(game:HttpGet("https://gitlab.com/0x45.xyz/droplib/-/raw/master/drop-minified.lua"))():Init(config,game.CoreGui)
+
+
+local lpg = gui:CreateCategory("TheDiscordGuy- IPHONE Blox Fruits SCRIPT")
+
+lpg:CreateButton("(Best No Key) REN HUB",function() loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/bloxfruit/main/free'))() 
+end)
+lpg:CreateButton("(Best No Key) URANIUM HUB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumX/main/URANIUMMOBILE_V2.3.lua.txt", true))() end)
+lpg:CreateButton("(Best No Key) SONIC HUB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/Protected-25.lua"))() end)
+
+local req = (syn and syn.request) or (http and http.request) or http_request or request
+
+req(
+   {
+       Url = "http://127.0.0.1:6463/rpc?v=1",
+       Method = "POST",
+       Headers = {
+           ["Content-Type"] = "application/json",
+           ["origin"] = "https://discord.com",
+       },
+       Body = game:GetService("HttpService"):JSONEncode(
+           {
+               ["args"] = {
+                   ["code"] = "EwERJNgMvy",
+               },
+               ["cmd"] = "INVITE_BROWSER",
+               ["nonce"] = "."
+           })
+   })
+
+
+
+
+
+
+
